@@ -1,0 +1,479 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   60-30-10 COLOR SYSTEM SPECIFICATION
+   60%: Canvas / Background: #ece8df (Kept identical as requested)
+   30%: Fonts & Typographic Hierarchy: #0A1333
+   10%: Calls To Action & Interactive Accents: #1CA3BB
+   ========================================================================== */
+:root {
+  /* ==========================================================================
+     NEUREX OFFICIAL COLOR TOKENS
+     ========================================================================== */
+  --primary-01: #fffe6a;            /* Electric Neon Yellow / Lime */
+  --primary-02: #000416;            /* Deepest Midnight Pitch Navy */
+  --primary-03: #0e111f;            /* Obsidian Navy */
+  --secondary-01: #4a4d5a;          /* Slate Grey Body */
+  --secondary-02: #797a7c;          /* Muted Caption Slate */
+  --bg-color: #f7f7f8;              /* Soft Light Canvas */
+  --stroke-color: #ebebeb;          /* Hairline Border */
+  --stroke-color-2: #e9e9e9;        /* Secondary Border */
+  --white: #ffffff;
+  --white-200: #f7f7f8;
+  --white-300: #e8e8e8;
+
+  /* Neurex Gradients */
+  --gradient-01: linear-gradient(#000917, #000d20 10%, #02122a 20%, #011742 30%, #01247b 40%, #153896 50%, #3055ba 60%, #4468c9 70%, #5879d0 80%, #6c89d9 84%, #86a1ea 88%, #b4c6f7 92%, #e7eeff 98%, #ffffff);
+  --gradient-02: linear-gradient(#000917, #000d20 12%, #02122a 23%, #011742 34%, #01247b 44%, #153896 55%, #3055ba 65%, #4468c9 76%, #5879d0 88%, #6c89d9 100%, #86a1ea 100%, #b4c6f7 100%, #e7eeff 100%, #ffffff);
+
+  /* 30% FONT & STRUCTURAL CORE */
+  --color-primary: #000416;
+  --color-primary-dark: #000917;
+  --color-primary-card: #0e111f;
+  --color-text-primary: #000416;
+  --color-text-body: #4a4d5a;
+  --color-text-muted: #797a7c;
+  
+  /* 10% CALLS TO ACTION & ACCENT */
+  --color-cta: #fffe6a;
+  --color-cta-hover: #f3f248;
+  --color-accent-sage: #fffe6a;
+  --color-accent-light: #fffe6a;
+  --color-accent-stroke: #ebebeb;
+
+  /* 60% CANVAS / BACKGROUND */
+  --color-canvas-base: #ffffff;
+  --color-surface-light: #ffffff;
+  --color-surface-warm: #f7f7f8;
+  
+  --color-border-subtle: #ebebeb;
+  --color-border-card: #ebebeb;
+  --color-border-cta: #fffe6a;
+
+  /* Inverse Text for Dark Inset */
+  --color-text-inverse: #ffffff;
+  --color-text-inverse-body: rgba(255, 255, 255, 0.7);
+  --color-text-inverse-accent: #fffe6a;
+
+  /* Typography */
+  --font-display: var(--font-inter), var(--font-raleway), 'Inter', sans-serif;
+  --font-body: var(--font-inter), var(--font-jakarta), 'Inter', sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
+
+  /* Depth & Shadows */
+  --shadow-subtle: 0 4px 14px -2px rgba(0, 4, 22, 0.05);
+  --shadow-elevated: 0 10px 28px -4px rgba(0, 4, 22, 0.08);
+  --shadow-feature: 0 20px 50px -10px rgba(0, 4, 22, 0.12);
+  --shadow-hover-ring: 0 0 0 2px rgba(255, 254, 106, 0.9), 0 20px 40px rgba(0, 4, 22, 0.22);
+}
+
+@layer base {
+  html {
+    background-color: var(--color-canvas-base);
+    color: var(--color-text-body);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: var(--color-canvas-base);
+    color: var(--color-text-body);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-text-primary);
+  }
+
+  /* Custom Selection Highlight (10% CTA: #1CA3BB) */
+  ::selection {
+    background-color: #1CA3BB;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  /* Layout Anchors */
+  .container-anchor {
+    @apply mx-auto max-w-[1720px] w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24;
+  }
+
+  .container-narrow {
+    @apply mx-auto max-w-[960px] w-full px-4 sm:px-6;
+  }
+
+  /* 10% Primary Action Button (CTA: #1CA3BB) */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer;
+    background-color: #1CA3BB;
+    color: #ffffff;
+    border: 1px solid #1CA3BB;
+    box-shadow: 0 4px 16px -2px rgba(28, 163, 187, 0.35);
+  }
+
+  .btn-primary:hover {
+    background-color: #168ea3;
+    border-color: #168ea3;
+    box-shadow: 0 0 24px rgba(28, 163, 187, 0.55);
+    transform: translateY(-2px);
+  }
+
+  /* Secondary Variant (30% Font/Border: #0A1333) */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer;
+    background-color: transparent;
+    color: #0A1333;
+    border: 1.5px solid #0A1333;
+  }
+
+  .btn-secondary:hover {
+    background-color: #0A1333;
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+
+  /* Dark Card Primary CTA */
+  .btn-dark-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer;
+    background-color: #1CA3BB;
+    color: #ffffff;
+    border: 1px solid #1CA3BB;
+    box-shadow: 0 0 20px rgba(28, 163, 187, 0.4);
+  }
+
+  .btn-dark-primary:hover {
+    background-color: #25bfdb;
+    box-shadow: 0 0 28px rgba(37, 191, 219, 0.7);
+    transform: translateY(-2px);
+  }
+
+  /* Card Surfaces */
+  .card-linen {
+    @apply bg-[#fbf9f4] rounded-2xl border border-[#ded6c7] transition-all duration-300;
+    box-shadow: 0 10px 28px -4px rgba(10, 19, 51, 0.08);
+  }
+
+  .card-linen:hover {
+    @apply border-[#1CA3BB];
+    box-shadow: 0 20px 50px -10px rgba(10, 19, 51, 0.12);
+    transform: translateY(-2px);
+  }
+
+  /* Monospace Micro-Badges */
+  .mono-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-mono text-[11px] uppercase tracking-wider font-bold border;
+  }
+
+  /* Split-Pill Button with 10% CTA Accent */
+  .wpp-btn-split {
+    @apply inline-flex items-center gap-2 p-1.5 rounded-full text-xs font-bold tracking-wide transition-all duration-300 cursor-pointer;
+    background-color: #0A1333;
+    color: #ffffff;
+    border: 1px solid rgba(28, 163, 187, 0.4);
+  }
+  .wpp-btn-split:hover {
+    background-color: #142459;
+    border-color: #1CA3BB;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px -4px rgba(10, 19, 51, 0.25);
+  }
+  .wpp-btn-split .btn-icon-circle {
+    @apply w-8 h-8 rounded-full flex items-center justify-center transition-transform duration-300;
+    background-color: #1CA3BB;
+    color: #ffffff;
+  }
+  .wpp-btn-split:hover .btn-icon-circle {
+    transform: rotate(45deg);
+    background-color: #25bfdb;
+    color: #0A1333;
+  }
+
+  /* Neurex Gradients */
+  .gradient-01-my {
+    background-image: var(--gradient-01);
+  }
+  .gradient-02 {
+    background-image: var(--gradient-02);
+  }
+
+  /* Neurex Button Wrap & Rolling Text Hover Effect */
+  .btn-wrap {
+    display: inline-flex;
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .btn-wrap:hover {
+    transform: scale(0.96);
+  }
+  .btn-text-wrap {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .btn-text-wrap .btn-text._01 {
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .btn-text-wrap .btn-text._02 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .btn-wrap:hover .btn-text-wrap .btn-text._01 {
+    transform: translateY(-100%);
+  }
+  .btn-wrap:hover .btn-text-wrap .btn-text._02 {
+    transform: translateY(-100%);
+  }
+
+  /* Neurex Official Buttons */
+  .btn-01-neon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    background-color: var(--primary-01);
+    color: var(--primary-02);
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-01-white {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    background-color: #ffffff;
+    color: #000416;
+    border-radius: 100px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #ebebeb;
+    cursor: pointer;
+  }
+
+  /* Continuous Ticker / Wave Flow */
+  @keyframes continuousFlow {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-50%, 0, 0); }
+  }
+
+  .animate-continuous-flow {
+    animation: continuousFlow 32s linear infinite;
+  }
+
+  /* Neurex Containers */
+  .container-01 {
+    width: 100%;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  @media (min-width: 640px) {
+    .container-01 {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-01 {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .container-02 {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  @media (min-width: 640px) {
+    .container-02 {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-02 {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  /* Neurex Typography Scale */
+  .heading-01 {
+    font-size: 34px;
+    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: var(--primary-02);
+  }
+  @media (min-width: 640px) {
+    .heading-01 {
+      font-size: 48px;
+      line-height: 1.12;
+      letter-spacing: -1.5px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .heading-01 {
+      font-size: 64px;
+      line-height: 72px;
+      letter-spacing: -1.92px;
+    }
+  }
+
+  .heading-02 {
+    font-size: 28px;
+    line-height: 1.18;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    color: var(--primary-02);
+  }
+  @media (min-width: 640px) {
+    .heading-02 {
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -1.4px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .heading-02 {
+      font-size: 56px;
+      line-height: 64px;
+      letter-spacing: -1.92px;
+    }
+  }
+
+  .sub-heading-01 {
+    font-size: 22px;
+    line-height: 1.25;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    color: var(--primary-02);
+  }
+  @media (min-width: 640px) {
+    .sub-heading-01 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  .sub-heading-02 {
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 500;
+    letter-spacing: -0.16px;
+    color: var(--primary-02);
+  }
+  @media (min-width: 640px) {
+    .sub-heading-02 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .sub-heading-03 {
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    color: var(--primary-02);
+  }
+  @media (min-width: 640px) {
+    .sub-heading-03 {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  .body-regular-01 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--secondary-01);
+  }
+  @media (min-width: 640px) {
+    .body-regular-01 {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .body-regular-02 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--secondary-01);
+  }
+  @media (min-width: 640px) {
+    .body-regular-02 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .body-medium-01 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--primary-02);
+  }
+  @media (min-width: 640px) {
+    .body-medium-01 {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .body-medium-02 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: var(--primary-02);
+  }
+  @media (min-width: 640px) {
+    .body-medium-02 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .color-secondary {
+    color: var(--secondary-01);
+  }
+
+  /* Prevent SVG blowout during Next.js SSR / Fast-Refresh before Tailwind hydration */
+  header svg:not([width]) {
+    max-width: 36px;
+    max-height: 36px;
+  }
+
+  /* Global Image Containment & Failsafe */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Ensure fill images never escape parent boundaries */
+  [data-nimg="fill"] {
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+}
