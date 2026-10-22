@@ -14,14 +14,14 @@ export const metadata = {
 
 export default function PhilosophyPage() {
   return (
-    <div className="pt-28 sm:pt-36 pb-24 bg-[#F1F3F5] text-[#04092B] relative overflow-hidden min-h-screen selection:bg-[#1ba3be] selection:text-white">
+    <div className="pt-28 sm:pt-32 lg:pt-36 pb-20 sm:pb-24 lg:pb-28 bg-[#F1F3F5] text-[#04092B] relative overflow-hidden min-h-screen selection:bg-[#1ba3be] selection:text-white">
       {/* Ambient Blue & Cyan Radial Glows (Matching Home Page Theme) */}
       <div className="absolute top-16 left-1/4 w-[650px] h-[650px] rounded-full bg-[#1ba3be]/8 blur-[140px] pointer-events-none" />
       <div className="absolute top-[480px] right-10 w-[500px] h-[500px] rounded-full bg-[#00D2FF]/8 blur-[130px] pointer-events-none" />
       <div className="absolute bottom-[350px] left-8 w-[600px] h-[600px] rounded-full bg-[#1ba3be]/10 blur-[150px] pointer-events-none" />
 
       {/* Header Banner */}
-      <section className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 py-10 sm:py-16 relative z-10">
+      <section className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 py-12 sm:py-16 lg:py-20 relative z-10">
         <div className="max-w-4xl space-y-5">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-black/[0.06] shadow-2xs text-xs font-mono font-semibold text-[#04092B]">
             <span className="w-2 h-2 rounded-full bg-[#00D2FF] animate-pulse" />
@@ -63,7 +63,7 @@ export default function PhilosophyPage() {
       </div>
 
       {/* Grid of Detailed Principles - Clean White Cards (Home Theme) */}
-      <section className="py-16 sm:py-20 relative z-10">
+      <section className="py-20 sm:py-24 lg:py-28 relative z-10">
         <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 space-y-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {philosophyPrinciples.map((principle) => (
@@ -106,7 +106,7 @@ export default function PhilosophyPage() {
       </section>
 
       {/* Interactive Accordion Deep-Dive View */}
-      <section className="py-16 sm:py-24 relative z-10 border-t border-black/[0.06]">
+      <section className="py-20 sm:py-24 lg:py-28 relative z-10 border-t border-black/[0.06]">
         <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24">
           <div className="max-w-3xl mx-auto text-center mb-12 space-y-3">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-black/[0.06] shadow-2xs text-xs font-mono font-semibold text-[#04092B]">
@@ -125,7 +125,7 @@ export default function PhilosophyPage() {
       </section>
 
       {/* Midnight Navy Inset Conversion Card (Matching Home Page Inset Theme) */}
-      <section className="pt-12 sm:pt-16 relative z-10">
+      <section className="pt-16 sm:pt-20 lg:pt-24 pb-20 sm:pb-24 relative z-10">
         <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24">
           <div className="bg-[#04092B] rounded-[36px] sm:rounded-[48px] p-8 sm:p-14 lg:p-16 text-white border border-white/10 shadow-[0_30px_70px_-20px_rgba(4,9,43,0.3)] relative overflow-hidden space-y-10">
             {/* Ambient Cyber Blue Glows */}

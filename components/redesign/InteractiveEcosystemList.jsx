@@ -10,7 +10,7 @@ export default function InteractiveEcosystemList() {
   const [activeVenture, setActiveVenture] = useState(0);
 
   return (
-    <section id="ecosystem" className="py-20 sm:py-24 bg-surface-light border-y border-border-card relative">
+    <section id="ecosystem" className="py-20 sm:py-24 lg:py-28 bg-surface-light border-y border-border-card relative">
       <div className="container-anchor space-y-12 sm:space-y-16">
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">

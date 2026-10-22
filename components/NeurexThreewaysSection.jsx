@@ -31,12 +31,12 @@ export default function NeurexThreewaysSection() {
   ];
 
   return (
-    <section className="w-full py-24 sm:py-32 lg:py-40 gradient-01-my text-white relative overflow-hidden">
+    <section className="w-full py-20 sm:py-24 lg:py-28 gradient-01-my text-white relative overflow-hidden">
       {/* Container: max-w 1240px as per Neurex container-01 */}
       <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
         
         {/* Top Header Row: Heading on left, Get Started button on right */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-14 lg:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 24, filter: "blur(4px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -60,7 +60,7 @@ export default function NeurexThreewaysSection() {
             <div className="btn-wrap">
               <Link
                 href="/contact"
-                className="btn-01-neon text-[#000416] font-medium px-6 py-2.5 sm:px-7 sm:py-3 inline-block"
+                className="btn-01-neon text-white font-medium px-6 py-2.5 sm:px-7 sm:py-3 inline-block"
               >
                 <span className="btn-text-wrap">
                   <span className="btn-text _01">Get in touch</span>

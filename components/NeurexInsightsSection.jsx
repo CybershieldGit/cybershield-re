@@ -46,12 +46,12 @@ export default function NeurexInsightsSection() {
   const currentArticle = articles[currentSlide];
 
   return (
-    <section className="w-full py-20 sm:py-28 lg:py-36 bg-white text-[#000416] relative overflow-hidden">
+    <section className="w-full py-20 sm:py-24 lg:py-28 bg-[#f7f7f8] text-[#000416] relative overflow-hidden">
       {/* Container: max-w 1240px as per Neurex container-01 */}
       <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
         
         {/* Top Header: Centered Section Title */}
-        <div className="text-center max-w-[700px] mx-auto mb-14 sm:mb-16">
+        <div className="text-center max-w-[700px] mx-auto mb-12 sm:mb-14 lg:mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 24, filter: "blur(4px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}

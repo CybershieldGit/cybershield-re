@@ -25,12 +25,12 @@ export default function NeurexImpactSection() {
   ];
 
   return (
-    <section className="w-full py-20 sm:py-28 lg:py-36 bg-white relative overflow-hidden text-[#000416]">
+    <section className="w-full py-20 sm:py-24 lg:py-28 bg-white relative overflow-hidden text-[#000416]">
       {/* Container: max-w 1310px as per Neurex container-02 */}
       <div className="w-full max-w-[1310px] mx-auto px-4 sm:px-8 lg:px-10">
         
         {/* Section Heading */}
-        <div className="text-center max-w-[720px] mx-auto mb-14 sm:mb-16">
+        <div className="text-center max-w-[720px] mx-auto mb-12 sm:mb-14 lg:mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 24, filter: "blur(4px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}

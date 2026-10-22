@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className="w-full bg-white">
       {/* 1. CTA Top Section (14-stop gradient-01-my) */}
-      <section className="cta-section gradient-01-my relative w-full pt-28 sm:pt-36 lg:pt-[140px] pb-24 sm:pb-32 lg:pb-[140px] text-white flex justify-center items-center overflow-hidden">
+      <section className="cta-section gradient-01-my relative w-full py-20 sm:py-24 lg:py-28 text-white flex justify-center items-center overflow-hidden">
         <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10 flex justify-center">
           <div className="max-w-[805px] w-full flex flex-col items-center text-center">
             {/* Heading 01 */}
@@ -24,12 +24,12 @@ export default function Footer() {
               </p>
             </div>
 
-            {/* Neon Yellow CTA Button with Rolling Text */}
+            {/* CyberShield Teal CTA Button with Rolling Text */}
             <div className="mt-7 sm:mt-8 flex justify-center">
               <div className="btn-wrap">
                 <Link
                   href="/contact"
-                  className="btn-01-neon cursor-pointer inline-block"
+                  className="btn-01-neon text-white cursor-pointer inline-block"
                 >
                   <div className="btn-text-wrap">
                     <div className="btn-text _01">
@@ -47,7 +47,7 @@ export default function Footer() {
       </section>
 
       {/* 2. Footer Section on Pure White Canvas */}
-      <footer className="footer w-full bg-white text-[#000416] pt-12 sm:pt-16 pb-14 overflow-hidden">
+      <footer className="footer w-full bg-white text-[#000416] pt-12 sm:pt-14 pb-12 sm:pb-14 border-t border-[#ebebeb]/80 overflow-hidden">
         <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
           
           {/* Social Media Links Grid: 3 columns x 2 rows with dividers */}

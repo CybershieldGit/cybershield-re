@@ -39,12 +39,12 @@ export default function NeurexSuccessStoriesSection() {
   const story = stories[currentSlide];
 
   return (
-    <section className="w-full py-20 sm:py-28 lg:py-36 bg-white text-[#000416] relative overflow-hidden">
+    <section className="w-full py-20 sm:py-24 lg:py-28 bg-white text-[#000416] relative overflow-hidden border-b border-[#ebebeb]/60">
       {/* Container: max-w 1240px as per Neurex container-01 */}
       <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
         
         {/* Top Header Row: Heading on left, Left/Right Arrow Carousel Controls on right */}
-        <div className="flex items-end justify-between gap-6 mb-12 sm:mb-16">
+        <div className="flex items-end justify-between gap-6 mb-12 sm:mb-14 lg:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 24, filter: "blur(4px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}

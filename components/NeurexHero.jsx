@@ -22,7 +22,7 @@ export default function NeurexHero() {
   return (
     <>
       {/* 1. Neurex Hero Section (14-stop gradient background) */}
-      <section className="relative w-full pt-28 sm:pt-36 lg:pt-40 pb-20 md:pb-28 gradient-01-my text-white overflow-hidden">
+      <section className="relative w-full pt-28 sm:pt-32 lg:pt-36 pb-16 sm:pb-20 lg:pb-24 gradient-01-my text-white overflow-hidden">
         {/* Container: max-w 1240px as per Neurex style guide container-01 */}
         <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-14">
@@ -52,7 +52,7 @@ export default function NeurexHero() {
                 <div className="btn-wrap">
                   <Link
                     href="/contact"
-                    className="btn-01-neon text-black font-medium inline-block"
+                    className="btn-01-neon text-white font-medium inline-block"
                   >
                     <span className="btn-text-wrap">
                       <span className="btn-text _01">Get in touch</span>
@@ -169,9 +169,9 @@ export default function NeurexHero() {
       </section>
 
       {/* 2. Neurex Logos Section ("Trusted by 100+ companies worldwide") */}
-      <section className="w-full py-16 sm:py-20 bg-white border-b border-[#ebebeb]">
+      <section className="w-full py-12 sm:py-14 bg-white border-b border-[#ebebeb]">
         <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
-          <div className="text-center mb-10">
+          <div className="text-center mb-8 sm:mb-10">
             <h2 className="text-xl sm:text-2xl font-medium text-[#000416] tracking-[-0.16px]">
               Trusted by 100+ companies worldwide
             </h2>

@@ -8,7 +8,7 @@ Based on the official Neurex Style Guide: [https://neurex.webflow.io/reference/s
 
 The **Neurex Design System** is a cutting-edge, high-contrast, modern AI & SaaS visual framework. It combines:
 1. **Ultra-Dark Obsidian & Midnight Blue Depths**: Deep, rich dark canvases (`#000416`, `#000917`, `#0e111f`) paired with stark crisp light canvases (`#f7f7f8`, `#ffffff`).
-2. **Signature Acid Neon / Electric Lime-Yellow Primary Accent**: `#fffe6a` (Primary 01), used for high-impact buttons, highlights, and conversion triggers.
+2. **Signature Cyber Cyan / Teal Primary Accent**: `#1CA3BB` (Primary 01), used for high-impact buttons, highlights, and conversion triggers.
 3. **Multi-Stop Midnight-to-Ice Gradients (`Gradient 01` & `Gradient 02`)**: Sophisticated 14-stop gradient ramps traversing from deepest pitch-navy through royal cobalt to icy sky blues and crisp whites.
 4. **Geist & Interdisplay Precision Typography**: Razor-sharp geometric letterforms with tight tracking (`-1.92px` on Hero display, `-0.32px` on sub-headings) and strict optical hierarchy.
 5. **Interactive Rolling Hover Buttons (`btn-text-wrap`)**: Dual-layer animated text that scrolls vertically on hover with micro-scale feedback (`transform: scale(0.95)`).
@@ -23,7 +23,7 @@ The system is calibrated around strong contrast, luminous midnight gradients, an
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │  PRIMARY COLOR 01        PRIMARY COLOR 02       SECONDARY COLOR 01          │
-│  #fffe6a (Neon Yellow)   #000416 (Deep Pitch)   #4a4d5a (Muted Slate)       │
+│  #1CA3BB (Cyber Cyan)    #000416 (Deep Pitch)   #4a4d5a (Muted Slate)       │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │  BG COLOR                STROKE COLOR           WHITE ACCENTS               │
 │  #f7f7f8 (Clean Grey)    #ebebeb (Subtle Line)  #ffffff / #e8e8e8           │
@@ -34,7 +34,7 @@ The system is calibrated around strong contrast, luminous midnight gradients, an
 
 | Token Name | Webflow Variable | Hex / Value | Description & Purpose |
 | :--- | :--- | :--- | :--- |
-| **Primary Color 01** | `--_color---used--primary-color-1` | `#fffe6a` | Signature Neurex high-voltage electric yellow/lime accent for primary CTA buttons, highlight cards, active states. |
+| **Primary Color 01** | `--_color---used--primary-color-1` | `#1CA3BB` | Signature CyberShield high-impact cyber cyan/teal accent for primary CTA buttons, highlight cards, active states. |
 | **Primary Color 02** | `--_color---used--primary-color-2` | `#000416` | Pitch black / deepest midnight navy for primary typography on light backgrounds, dark buttons, dark card surfaces. |
 | **Primary Color 03** | `--_color---used--primary-color-3` | `#0e111f` | Deep obsidian secondary background tone for cards, hero containers, and dark section insets. |
 | **Secondary Color 01** | `--_color---used--secondary-color-1` | `#4a4d5a` | Slate grey for secondary body copy, paragraph text, social icons, subtitles. |
@@ -212,9 +212,9 @@ Every Neurex button uses the signature vertical slide text animation on hover:
 
 ### 2. Button Variants
 
-#### Variant A: Primary Neon Button (`variant: btn-02`)
-- **Background**: `var(--_color---used--primary-color-1)` (`#fffe6a`)
-- **Text Color**: `var(--_color---used--primary-color-2)` (`#000416`)
+#### Variant A: Primary Teal Button (`variant: btn-02`)
+- **Background**: `var(--_color---used--primary-color-1)` (`#1CA3BB`)
+- **Text Color**: `#ffffff`
 - **Border Radius**: `100px`
 - **Padding**: `10px 24px` (or `12px 28px`)
 - **Hover**: Scales gently (`scale(0.95)`), rolling text slide.
@@ -265,7 +265,7 @@ Neurex features an iconic structured footer with dual-action arrow social links:
   - Right: Slanted arrow link icon (`M16.1716 10.9989L10.8076 5.63491...`).
   - Hover: `transform: scale(0.95); color: #000416; transition: all 0.2s ease;`
 - **Footer Columns**: `Overview`, `Company`, `Resources`, `Utilities` grid with clean 16px regular links.
-- **Footer CTA Banner**: Uses `Gradient 01` (`gradient-01-my`) with large `heading-01` text in white and a primary neon button (`#fffe6a`).
+- **Footer CTA Banner**: Uses `Gradient 01` (`gradient-01-my`) with large `heading-01` text in white and a primary cyan button (`#1CA3BB`).
 
 ---
 
@@ -276,7 +276,7 @@ Neurex features an iconic structured footer with dual-action arrow social links:
   /* ==========================================================================
      NEUREX OFFICIAL COLOR TOKENS
      ========================================================================== */
-  --primary-01: #fffe6a;            /* Electric Neon Yellow / Lime */
+  --primary-01: #1CA3BB;            /* CyberShield Signature Cyan / Teal */
   --primary-02: #000416;            /* Deepest Midnight Pitch Navy */
   --primary-03: #0e111f;            /* Obsidian Navy */
   --secondary-01: #4a4d5a;          /* Slate Grey Body */
@@ -367,7 +367,7 @@ When converting or authoring CyberShield pages & components:
 
 1. **Replace Earthy Palettes with Neurex Precision**:
    - Swap warm sand/sage for `#f7f7f8` (canvas), `#ffffff` (cards), and `#000416` (contrast sections).
-   - Use `#fffe6a` (Neon Yellow) as the primary highlight / CTA button background.
+   - Use `#1CA3BB` (Cyber Teal/Cyan) as the primary highlight / CTA button background.
    - Use `#4a4d5a` for paragraph body copy.
 2. **Apply Neurex Gradient 01 & 02**:
    - For dark hero sections and bottom CTA banners, apply `--gradient-01`.

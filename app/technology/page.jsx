@@ -3,7 +3,6 @@ import Link from "next/link";
 import { techStackData } from "@/data/siteData";
 import TechTerminalInspector from "@/components/telemetry/TechTerminalInspector";
 import TiltCard from "@/components/motion/TiltCard";
-import BigTextCTA from "@/components/redesign/BigTextCTA";
 import InfiniteMarquee from "@/components/motion/InfiniteMarquee";
 import { CheckCircle2, ShieldCheck } from "lucide-react";
 
@@ -14,9 +13,9 @@ export const metadata = {
 
 export default function TechnologyPage() {
   return (
-    <div className="pt-28 sm:pt-32 pb-16 bg-canvas-base">
+    <div className="pt-28 sm:pt-32 lg:pt-36 bg-canvas-base">
       {/* Header Banner */}
-      <section className="container-anchor py-12 sm:py-16">
+      <section className="container-anchor pb-16 sm:pb-20 lg:pb-24">
         <div className="max-w-4xl space-y-4">
           <div className="inline-flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-forest" />
@@ -38,7 +37,7 @@ export default function TechnologyPage() {
       </section>
 
       {/* Infinite Ticker */}
-      <div className="bg-forest text-surface-light border-y border-forest-hover my-6">
+      <div className="bg-forest text-surface-light border-y border-forest-hover my-8 sm:my-10">
         <InfiniteMarquee
           speed={30}
           itemClassName="text-sage-light tracking-widest text-xs sm:text-sm font-mono"
@@ -60,7 +59,7 @@ export default function TechnologyPage() {
       </div>
 
       {/* Production Stack Section with Terminal Inspector */}
-      <section className="py-16 bg-surface-light border-y border-border-card">
+      <section className="py-20 sm:py-24 lg:py-28 bg-surface-light border-y border-border-card">
         <div className="container-anchor space-y-16">
           {/* Interactive Terminal Inspector */}
           <TechTerminalInspector />
@@ -117,9 +116,6 @@ export default function TechnologyPage() {
           </div>
         </div>
       </section>
-
-      {/* Conversion CTA */}
-      <BigTextCTA />
     </div>
   );
 }

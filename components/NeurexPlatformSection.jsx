@@ -240,15 +240,15 @@ export default function NeurexPlatformSection() {
   const rightBrands = SISTER_BRANDS.filter((b) => b.position === "right");
 
   return (
-    <section className="w-full py-20 sm:py-28 lg:py-36 bg-white text-[#000416] relative overflow-hidden" id="sister-brands">
+    <section className="w-full py-20 sm:py-24 lg:py-28 bg-white text-[#000416] relative overflow-hidden border-b border-[#ebebeb]/60" id="sister-brands">
       {/* Background Subtle Accent Gradients */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-gradient-to-tr from-[#fffe6a]/5 via-[#1ca3bb]/5 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-gradient-to-tr from-[#1ca3bb]/10 via-[#1ca3bb]/5 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
 
       {/* Container: max-w 1240px as per Neurex design standards */}
       <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
         
         {/* Top Header Row */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-14 lg:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 24, filter: "blur(4px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -280,7 +280,7 @@ export default function NeurexPlatformSection() {
             <div className="btn-wrap">
               <button
                 onClick={() => openConsultation("Sister Brands Section CTA")}
-                className="btn-01-neon text-[#000416] font-medium px-6 py-2.5 sm:px-7 sm:py-3 shadow-sm hover:shadow-md"
+                className="btn-01-neon text-white font-medium px-6 py-2.5 sm:px-7 sm:py-3 shadow-sm hover:shadow-md"
               >
                 <span className="btn-text-wrap">
                   <span className="btn-text _01">Explore The Collective</span>
@@ -466,7 +466,7 @@ export default function NeurexPlatformSection() {
 
                         {/* Problem Catered Highlight Pill */}
                         <div className="p-2.5 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 flex items-start gap-2">
-                          <span className="text-[10px] font-mono uppercase tracking-wider font-bold text-[#fffe6a] shrink-0 mt-0.5">
+                          <span className="text-[10px] font-mono uppercase tracking-wider font-bold text-[#1CA3BB] shrink-0 mt-0.5">
                             Problem Catered:
                           </span>
                           <span className="text-xs text-white/90 leading-tight">
@@ -511,7 +511,7 @@ export default function NeurexPlatformSection() {
                                 setLockedBrandId(null);
                               }}
                               title="View Collective Overview"
-                              className="h-2.5 px-2 rounded-full transition-all duration-300 flex items-center justify-center text-[9px] font-bold bg-white/20 text-white hover:bg-[#fffe6a] hover:text-[#000416] cursor-pointer"
+                              className="h-2.5 px-2 rounded-full transition-all duration-300 flex items-center justify-center text-[9px] font-bold bg-white/20 text-white hover:bg-[#1CA3BB] hover:text-white cursor-pointer"
                             >
                               ALL
                             </button>
@@ -633,7 +633,7 @@ export default function NeurexPlatformSection() {
                         <div className="flex items-center justify-between gap-3 pt-3 border-t border-white/15 mt-1">
                           <button
                             onClick={() => openConsultation("Collective Architecture Center Card")}
-                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-xs sm:text-sm bg-[#fffe6a] hover:bg-white text-[#000416] transition-all duration-300 shadow-md group/btn cursor-pointer"
+                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-xs sm:text-sm bg-[#1CA3BB] hover:bg-[#168ea3] text-white transition-all duration-300 shadow-[0_4px_16px_rgba(28,163,187,0.4)] group/btn cursor-pointer"
                           >
                             <span>Explore The Collective</span>
                             <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
@@ -648,7 +648,7 @@ export default function NeurexPlatformSection() {
                                 setLockedBrandId(null);
                               }}
                               title="Collective Story Overview"
-                              className="h-2.5 px-2 rounded-full transition-all duration-300 flex items-center justify-center text-[9px] font-bold bg-[#fffe6a] text-[#000416] cursor-pointer"
+                              className="h-2.5 px-2 rounded-full transition-all duration-300 flex items-center justify-center text-[9px] font-bold bg-[#1CA3BB] text-white cursor-pointer"
                             >
                               ALL
                             </button>

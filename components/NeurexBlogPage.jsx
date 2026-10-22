@@ -159,7 +159,7 @@ export default function NeurexBlogPage() {
   return (
     <div className="w-full bg-white text-[#000416] overflow-x-hidden">
       {/* 1. HERO SECTION */}
-      <section className="hero-section w-full pt-32 sm:pt-36 lg:pt-40 pb-12 sm:pb-16">
+      <section className="hero-section w-full pt-28 sm:pt-32 lg:pt-36 pb-16 sm:pb-20 lg:pb-24">
         <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
           <div className="blog-01-hero flex flex-col items-center">
             
@@ -270,7 +270,7 @@ export default function NeurexBlogPage() {
       </section>
 
       {/* 2. SECTION 02: MORE BLOGS & ARTICLES */}
-      <section className="section-02 w-full pt-16 sm:pt-20 lg:pt-24 pb-28 sm:pb-36 lg:pb-40">
+      <section className="section-02 w-full py-20 sm:py-24 lg:py-28 border-t border-[#ebebeb]/80 bg-[#f7f7f8]">
         <div className="w-full max-w-[1310px] mx-auto px-4 sm:px-8 lg:px-10">
           <div className="blogs-01 flex flex-col gap-10 sm:gap-12 lg:gap-[52px]">
             

@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { ecosystemVentures } from "@/data/siteData";
 import InteractiveEcosystemList from "@/components/redesign/InteractiveEcosystemList";
-import BigTextCTA from "@/components/redesign/BigTextCTA";
 import InfiniteMarquee from "@/components/motion/InfiniteMarquee";
 import { Network, ShieldCheck, Layers } from "lucide-react";
 
@@ -13,9 +12,9 @@ export const metadata = {
 
 export default function EcosystemPage() {
   return (
-    <div className="pt-28 sm:pt-32 pb-16 bg-canvas-base">
+    <div className="pt-28 sm:pt-32 lg:pt-36 bg-canvas-base">
       {/* Header Banner */}
-      <section className="container-anchor py-12 sm:py-16">
+      <section className="container-anchor pb-16 sm:pb-20 lg:pb-24">
         <div className="max-w-4xl space-y-4">
           <div className="inline-flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-forest" />
@@ -37,7 +36,7 @@ export default function EcosystemPage() {
       </section>
 
       {/* Infinite Ticker */}
-      <div className="bg-forest text-surface-light border-y border-forest-hover my-6">
+      <div className="bg-forest text-surface-light border-y border-forest-hover my-8 sm:my-10">
         <InfiniteMarquee
           speed={32}
           itemClassName="text-sage-light tracking-widest text-xs sm:text-sm font-mono"
@@ -54,7 +53,7 @@ export default function EcosystemPage() {
       </div>
 
       {/* Shared Architecture Pillars */}
-      <section className="py-12 bg-surface-light border-y border-border-card">
+      <section className="py-20 sm:py-24 lg:py-28 bg-surface-light border-y border-border-card">
         <div className="container-anchor">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="flex items-start gap-3.5 p-5 rounded-2xl bg-surface-warm border border-border-subtle/50">
@@ -90,9 +89,6 @@ export default function EcosystemPage() {
 
       {/* Interactive Ecosystem List & Telemetry Console */}
       <InteractiveEcosystemList />
-
-      {/* Conversion CTA */}
-      <BigTextCTA />
     </div>
   );
 }

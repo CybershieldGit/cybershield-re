@@ -207,9 +207,9 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="w-full bg-white text-[#000416] overflow-x-hidden pt-28 sm:pt-36">
+    <div className="w-full bg-white text-[#000416] overflow-x-hidden pt-28 sm:pt-32 lg:pt-36">
       {/* 1. HERO SECTION */}
-      <section className="w-full pb-16 sm:pb-24">
+      <section className="w-full pb-16 sm:pb-20 lg:pb-24">
         <div className="container-02">
           <div className="flex flex-col gap-10 sm:gap-14">
             {/* Hero Text Content */}
@@ -224,7 +224,7 @@ export default function AboutPage() {
                 <div className="btn-wrap">
                   <Link
                     href="/contact"
-                    className="btn-01-neon cursor-pointer inline-block"
+                    className="btn-01-neon text-white cursor-pointer inline-block"
                   >
                     <span className="btn-text-wrap">
                       <span className="btn-text _01">Get in touch</span>
@@ -273,7 +273,7 @@ export default function AboutPage() {
       </section>
 
       {/* 2. IMPACT & STATS SECTION + TESTIMONIAL CARD */}
-      <section className="w-full py-16 sm:py-24 border-t border-[#ebebeb]">
+      <section className="w-full py-20 sm:py-24 lg:py-28 border-t border-[#ebebeb]">
         <div className="container-01">
           <div className="flex flex-col gap-12 sm:gap-16">
             {/* Heading */}
@@ -337,7 +337,7 @@ export default function AboutPage() {
       </section>
 
       {/* 3. INNOVATION & DETAILS ASYMMETRIC GRID */}
-      <section className="w-full py-16 sm:py-24 border-t border-[#ebebeb]">
+      <section className="w-full py-20 sm:py-24 lg:py-28 border-t border-[#ebebeb]">
         <div className="container-01">
           <div className="flex flex-col gap-10 sm:gap-14">
             <div className="max-w-[680px]">
@@ -403,7 +403,7 @@ export default function AboutPage() {
       </section>
 
       {/* 4. CORE BELIEFS 6-CARD GRID */}
-      <section className="w-full py-16 sm:py-24 border-t border-[#ebebeb] bg-[#f7f7f8]">
+      <section className="w-full py-20 sm:py-24 lg:py-28 border-t border-[#ebebeb] bg-[#f7f7f8]">
         <div className="container-01">
           <div className="flex flex-col gap-12 sm:gap-16">
             <div className="max-w-[680px]">
@@ -441,7 +441,7 @@ export default function AboutPage() {
       </section>
 
       {/* 5. MEET THE MINDS TEAM GRID */}
-      <section className="w-full py-16 sm:py-24 border-t border-[#ebebeb]">
+      <section className="w-full py-20 sm:py-24 lg:py-28 border-t border-[#ebebeb]">
         <div className="container-01">
           <div className="flex flex-col gap-12 sm:gap-16">
             <div className="max-w-[680px]">
@@ -511,7 +511,7 @@ export default function AboutPage() {
       </section>
 
       {/* 6. GLOBAL REACH CONTACT SECTION */}
-      <section className="w-full py-16 sm:py-24 border-t border-[#ebebeb] bg-[#f7f7f8]">
+      <section className="w-full py-20 sm:py-24 lg:py-28 border-t border-[#ebebeb] bg-[#f7f7f8]">
         <div className="container-01">
           <div className="flex flex-col gap-10 sm:gap-14">
             <div className="max-w-[680px]">
@@ -566,7 +566,7 @@ export default function AboutPage() {
       </section>
 
       {/* 7. FREQUENTLY ASKED QUESTIONS SECTION */}
-      <section className="w-full py-16 sm:py-24 border-t border-[#ebebeb]">
+      <section className="w-full py-20 sm:py-24 lg:py-28 border-t border-[#ebebeb]">
         <div className="container-01">
           <div className="flex flex-col gap-12 sm:gap-16">
             <div className="max-w-[680px]">

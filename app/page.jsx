@@ -12,7 +12,7 @@ import NeurexInsightsSection from "@/components/NeurexInsightsSection";
 export default function HomePage() {
 
   return (
-    <main className="bg-white min-h-screen text-[#000416] selection:bg-[#fffe6a] selection:text-[#000416]">
+    <main className="bg-white min-h-screen text-[#000416] selection:bg-[#1CA3BB] selection:text-white">
       {/* 1. Neurex Home-02 Hero Section & Partner Logos Marquee */}
       <NeurexHero />
 

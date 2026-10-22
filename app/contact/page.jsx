@@ -38,9 +38,9 @@ export default function ContactPage() {
   return (
     <main className="w-full bg-white text-[#000416]">
       {/* 1. Hero Section (gradient-01-my, exact Neurex Contact-02 structure) */}
-      <section className="w-full pt-32 sm:pt-40 lg:pt-44 pb-20 sm:pb-28 lg:pb-32 gradient-01-my text-white relative overflow-hidden">
+      <section className="w-full pt-28 sm:pt-32 lg:pt-36 pb-20 sm:pb-24 lg:pb-28 gradient-01-my text-white relative overflow-hidden">
         {/* Background glow effects */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-[#1ca3bb]/20 via-[#fffe6a]/10 to-transparent rounded-full blur-3xl pointer-events-none -z-0" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-[#1ca3bb]/25 via-[#1ca3bb]/10 to-transparent rounded-full blur-3xl pointer-events-none -z-0" />
 
         <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10 relative z-10">
           
@@ -69,7 +69,7 @@ export default function ContactPage() {
             >
               {submitted ? (
                 <div className="py-12 text-center space-y-4">
-                  <div className="w-16 h-16 mx-auto rounded-full bg-[#fffe6a] text-[#000416] flex items-center justify-center font-bold text-2xl shadow-md">
+                  <div className="w-16 h-16 mx-auto rounded-full bg-[#1CA3BB] text-white flex items-center justify-center font-bold text-2xl shadow-md">
                     ✓
                   </div>
                   <h3 className="text-2xl font-medium text-[#000416]">
@@ -174,7 +174,7 @@ export default function ContactPage() {
                       <div className="btn-wrap w-full">
                         <button
                           type="submit"
-                          className="btn-01-neon w-full cursor-pointer flex justify-center items-center py-3.5 sm:py-4 rounded-full text-center"
+                          className="btn-01-neon text-white w-full cursor-pointer flex justify-center items-center py-3.5 sm:py-4 rounded-full text-center"
                         >
                           <span className="btn-text-wrap">
                             <span className="btn-text _01">Submit</span>
@@ -251,11 +251,11 @@ export default function ContactPage() {
       </section>
 
       {/* 2. Office Locations & Contact Details Section (section-04, pure white canvas) */}
-      <section className="w-full py-20 sm:py-28 lg:py-32 bg-white text-[#000416]">
+      <section className="w-full py-20 sm:py-24 lg:py-28 bg-white text-[#000416]">
         <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
           
           {/* Section Heading */}
-          <div className="mb-10 sm:mb-14">
+          <div className="mb-12 sm:mb-14 lg:mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-[52px] font-medium leading-[1.15] tracking-[-1.5px] text-[#000416]">
               Our office locations and contact details
             </h2>

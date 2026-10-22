@@ -123,12 +123,12 @@ export default function CareersPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-white text-[#000416] selection:bg-[#fffe6a] selection:text-[#000416] overflow-x-hidden pt-28 sm:pt-32">
+    <main className="min-h-screen bg-white text-[#000416] selection:bg-[#1CA3BB] selection:text-white overflow-x-hidden pt-28 sm:pt-32 lg:pt-36">
       
       {/* =========================================================================
           SECTION 1: HERO SECTION (Headline + See Open Positions + 5-Image Grid)
       ========================================================================== */}
-      <section className="relative w-full pt-12 sm:pt-16 pb-16 sm:pb-24 overflow-hidden">
+      <section className="relative w-full pb-16 sm:pb-20 lg:pb-24 overflow-hidden">
         <div className="max-w-[1240px] w-full mx-auto px-4 sm:px-8 lg:px-10">
           <div className="flex flex-col items-center text-center">
             
@@ -144,7 +144,7 @@ export default function CareersPage() {
               </h1>
             </motion.div>
 
-            {/* See Open Positions Yellow Pill Button */}
+            {/* See Open Positions Teal Pill Button */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -154,7 +154,7 @@ export default function CareersPage() {
               <div className="btn-wrap">
                 <a
                   href="#career"
-                  className="btn-01-link bg-[#fffe6a] hover:bg-[#f5f458] text-[#000416] rounded-full px-8 py-4 font-medium text-[16px] inline-flex items-center justify-center transition-all duration-300 shadow-sm group"
+                  className="btn-01-link bg-[#1CA3BB] hover:bg-[#168ea3] text-white rounded-full px-8 py-4 font-medium text-[16px] inline-flex items-center justify-center transition-all duration-300 shadow-md group"
                 >
                   <span className="btn-text-wrap">
                     <span className="btn-text _01">See open positions</span>
@@ -236,7 +236,7 @@ export default function CareersPage() {
       {/* =========================================================================
           SECTION 2: MISSION STATEMENT DISPLAY BANNER (.career-text)
       ========================================================================== */}
-      <section className="w-full py-16 sm:py-24">
+      <section className="w-full py-20 sm:py-24 lg:py-28 border-t border-[#ebebeb]/60">
         <div className="max-w-[1240px] w-full mx-auto px-4 sm:px-8 lg:px-10">
           <div className="max-w-[1028px] mx-auto text-center">
             <h2 className="heading-02 font-medium leading-[1.15] text-[#000416]">
@@ -249,7 +249,7 @@ export default function CareersPage() {
       {/* =========================================================================
           SECTION 3: PERKS AND BENEFITS 4-CARD GRID (.service-06-inner)
       ========================================================================== */}
-      <section className="w-full py-16 sm:py-24">
+      <section className="w-full py-20 sm:py-24 lg:py-28 border-t border-[#ebebeb]/60 bg-[#f7f7f8]">
         <div className="max-w-[1240px] w-full mx-auto px-4 sm:px-8 lg:px-10">
           
           {/* Section Heading */}
@@ -292,7 +292,7 @@ export default function CareersPage() {
       {/* =========================================================================
           SECTION 4: HEAR STRAIGHT FROM OUR EMPLOYEES (3x2 Bento Grid)
       ========================================================================== */}
-      <section className="w-full py-16 sm:py-24">
+      <section className="w-full py-20 sm:py-24 lg:py-28 border-t border-[#ebebeb]/60">
         <div className="max-w-[1240px] w-full mx-auto px-4 sm:px-8 lg:px-10">
           
           {/* Section Heading */}
@@ -382,7 +382,7 @@ export default function CareersPage() {
       {/* =========================================================================
           SECTION 5: FIND YOUR PERFECT ROLE (#career)
       ========================================================================== */}
-      <section id="career" className="w-full py-16 sm:py-24 scroll-mt-24">
+      <section id="career" className="w-full py-20 sm:py-24 lg:py-28 border-t border-[#ebebeb]/60 bg-[#f7f7f8] scroll-mt-24">
         <div className="max-w-[1240px] w-full mx-auto px-4 sm:px-8 lg:px-10">
           
           {/* Section Heading */}
@@ -436,7 +436,7 @@ export default function CareersPage() {
                       <div className="btn-wrap self-start sm:self-auto">
                         <Link
                           href={`/careers/${role.slug}`}
-                          className="btn-01-link bg-[#fffe6a] hover:bg-[#f5f458] text-[#000416] px-6 py-2.5 rounded-full font-medium text-[14px] inline-flex items-center justify-center transition-all duration-200 shadow-sm"
+                          className="btn-01-link bg-[#1CA3BB] hover:bg-[#168ea3] text-white px-6 py-2.5 rounded-full font-medium text-[14px] inline-flex items-center justify-center transition-all duration-200 shadow-sm"
                         >
                           <span className="btn-text-wrap">
                             <span className="btn-text _01">Apply Now</span>
@@ -495,7 +495,7 @@ export default function CareersPage() {
                       <div className="btn-wrap self-start sm:self-auto">
                         <Link
                           href={`/careers/${role.slug}`}
-                          className="btn-01-link bg-[#fffe6a] hover:bg-[#f5f458] text-[#000416] px-6 py-2.5 rounded-full font-medium text-[14px] inline-flex items-center justify-center transition-all duration-200 shadow-sm"
+                          className="btn-01-link bg-[#1CA3BB] hover:bg-[#168ea3] text-white px-6 py-2.5 rounded-full font-medium text-[14px] inline-flex items-center justify-center transition-all duration-200 shadow-sm"
                         >
                           <span className="btn-text-wrap">
                             <span className="btn-text _01">Apply Now</span>
@@ -517,7 +517,7 @@ export default function CareersPage() {
       {/* =========================================================================
           SECTION 6: FREQUENTLY ASKED QUESTIONS ACCORDION (.faq)
       ========================================================================== */}
-      <section className="w-full py-16 sm:py-24">
+      <section className="w-full py-20 sm:py-24 lg:py-28 border-t border-[#ebebeb]/60">
         <div className="max-w-[1240px] w-full mx-auto px-4 sm:px-8 lg:px-10">
           
           {/* Header */}

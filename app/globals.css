@@ -12,7 +12,7 @@
   /* ==========================================================================
      NEUREX OFFICIAL COLOR TOKENS
      ========================================================================== */
-  --primary-01: #fffe6a;            /* Electric Neon Yellow / Lime */
+  --primary-01: #1CA3BB;            /* CyberShield Signature Teal/Cyan */
   --primary-02: #000416;            /* Deepest Midnight Pitch Navy */
   --primary-03: #0e111f;            /* Obsidian Navy */
   --secondary-01: #4a4d5a;          /* Slate Grey Body */
@@ -37,10 +37,10 @@
   --color-text-muted: #797a7c;
   
   /* 10% CALLS TO ACTION & ACCENT */
-  --color-cta: #fffe6a;
-  --color-cta-hover: #f3f248;
-  --color-accent-sage: #fffe6a;
-  --color-accent-light: #fffe6a;
+  --color-cta: #1CA3BB;
+  --color-cta-hover: #168ea3;
+  --color-accent-sage: #1CA3BB;
+  --color-accent-light: #1CA3BB;
   --color-accent-stroke: #ebebeb;
 
   /* 60% CANVAS / BACKGROUND */
@@ -50,12 +50,12 @@
   
   --color-border-subtle: #ebebeb;
   --color-border-card: #ebebeb;
-  --color-border-cta: #fffe6a;
+  --color-border-cta: #1CA3BB;
 
   /* Inverse Text for Dark Inset */
   --color-text-inverse: #ffffff;
   --color-text-inverse-body: rgba(255, 255, 255, 0.7);
-  --color-text-inverse-accent: #fffe6a;
+  --color-text-inverse-accent: #1CA3BB;
 
   /* Typography */
   --font-display: var(--font-inter), var(--font-raleway), 'Inter', sans-serif;
@@ -66,7 +66,7 @@
   --shadow-subtle: 0 4px 14px -2px rgba(0, 4, 22, 0.05);
   --shadow-elevated: 0 10px 28px -4px rgba(0, 4, 22, 0.08);
   --shadow-feature: 0 20px 50px -10px rgba(0, 4, 22, 0.12);
-  --shadow-hover-ring: 0 0 0 2px rgba(255, 254, 106, 0.9), 0 20px 40px rgba(0, 4, 22, 0.22);
+  --shadow-hover-ring: 0 0 0 2px rgba(28, 163, 187, 0.9), 0 20px 40px rgba(0, 4, 22, 0.22);
 }
 
 @layer base {
@@ -103,6 +103,19 @@
 
   .container-narrow {
     @apply mx-auto max-w-[960px] w-full px-4 sm:px-6;
+  }
+
+  /* Standardized Section Spacing System */
+  .section-py {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  .section-hero-py {
+    @apply pt-28 sm:pt-32 lg:pt-36 pb-16 sm:pb-20 lg:pb-24;
+  }
+
+  .section-header-mb {
+    @apply mb-12 sm:mb-14 lg:mb-16;
   }
 
   /* 10% Primary Action Button (CTA: #1CA3BB) */
@@ -238,14 +251,22 @@
     align-items: center;
     justify-content: center;
     padding: 10px 24px;
-    background-color: var(--primary-01);
-    color: var(--primary-02);
+    background-color: #1CA3BB;
+    color: #ffffff;
     border-radius: 100px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
-    border: none;
+    border: 1px solid #1CA3BB;
+    box-shadow: 0 4px 16px -2px rgba(28, 163, 187, 0.4);
     cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .btn-01-neon:hover {
+    background-color: #168ea3;
+    border-color: #168ea3;
+    color: #ffffff;
+    box-shadow: 0 0 24px rgba(28, 163, 187, 0.65);
   }
 
   .btn-01-white {
