@@ -44,7 +44,7 @@ export default function NeurexSuccessStoriesSection() {
       <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
         
         {/* Top Header Row: Heading on left, Left/Right Arrow Carousel Controls on right */}
-        <div className="flex items-end justify-between gap-6 mb-12 sm:mb-14 lg:mb-16">
+        <div className="flex items-start justify-between gap-6 mb-12 sm:mb-14 lg:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 24, filter: "blur(4px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -52,7 +52,7 @@ export default function NeurexSuccessStoriesSection() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-[530px]"
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-[56px] font-medium leading-[1.12] lg:leading-[64px] tracking-[-1.2px] lg:tracking-[-1.92px] text-[#000416]">
+            <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-medium leading-[1.12] lg:leading-[56px] tracking-[-1.2px] lg:tracking-[-1.5px] text-[#000416]">
               Success stories from <br className="hidden sm:block" />
               our clients
             </h2>
@@ -108,7 +108,7 @@ export default function NeurexSuccessStoriesSection() {
               <div className="rounded-[24px] sm:rounded-[36px] bg-[#f7f7f8] p-6 sm:p-12 lg:p-16 flex flex-col justify-between gap-6 sm:gap-10">
                 {/* Main Testimonial Statement */}
                 <div className="pt-1 sm:pt-2">
-                  <p className="text-lg sm:text-2xl lg:text-[28px] font-medium leading-[1.35] tracking-[-0.32px] text-[#000416]">
+                  <p className="text-lg sm:text-2xl lg:text-[26px] font-medium leading-[1.35] tracking-[-0.32px] text-[#000416]">
                     {story.quote}
                   </p>
                 </div>

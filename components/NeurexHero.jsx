@@ -32,13 +32,14 @@ export default function NeurexHero() {
               initial={{ opacity: 0, y: 30, filter: "blur(4px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full lg:max-w-[550px] flex flex-col gap-6 sm:gap-7"
+              className="w-full lg:max-w-[620px] flex flex-col gap-6 sm:gap-7"
             >
 
 
               {/* Primary Headline 01 */}
-              <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-medium leading-[1.08] lg:leading-[72px] tracking-[-1.5px] lg:tracking-[-1.92px] text-white">
-                Engineering the digital backbone for enterprise scale
+              <h1 className="text-4xl sm:text-5xl lg:text-[54px] xl:text-[60px] font-medium leading-[1.1] lg:leading-[68px] tracking-[-1.5px] lg:tracking-[-1.92px] text-white">
+                Engineering the digital backbone <br className="hidden sm:block" />
+                for enterprise scale
               </h1>
 
               {/* Sub-headline description */}

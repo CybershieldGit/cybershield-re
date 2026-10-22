@@ -248,7 +248,7 @@ export default function NeurexPlatformSection() {
       <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
         
         {/* Top Header Row */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-14 lg:mb-16">
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-12 sm:mb-14 lg:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 24, filter: "blur(4px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -264,7 +264,7 @@ export default function NeurexPlatformSection() {
               <span className="text-[#000416] font-bold">06 Specialized Brands</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-[54px] font-medium leading-[1.12] lg:leading-[62px] tracking-[-1.2px] lg:tracking-[-1.8px] text-[#000416]">
+            <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-medium leading-[1.12] lg:leading-[56px] tracking-[-1.2px] lg:tracking-[-1.5px] text-[#000416]">
               One collective powering <br className="hidden sm:block" />
               6 specialized sister brands
             </h2>
@@ -355,7 +355,7 @@ export default function NeurexPlatformSection() {
                   <div className="flex flex-col gap-1">
                     <div className="flex flex-col xs:flex-row xs:items-baseline gap-0.5 xs:gap-2">
                       <h3
-                        className={`text-base sm:text-lg lg:text-xl font-medium tracking-tight transition-colors duration-200 ${
+                        className={`text-base sm:text-lg lg:text-[26px] font-medium tracking-tight leading-tight transition-colors duration-200 ${
                           isActive ? "text-[#000416] font-semibold" : "text-[#1d202d] group-hover:text-[#000416]"
                         }`}
                       >
@@ -450,7 +450,7 @@ export default function NeurexPlatformSection() {
                             {activeBrand.renderLogo(true)}
                           </div>
                           <div className="flex flex-col">
-                            <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-none">
+                            <h3 className="text-2xl sm:text-[26px] font-bold text-white tracking-tight leading-none">
                               {activeBrand.name}
                             </h3>
                             <p className="text-xs sm:text-sm text-white/80 font-medium mt-1">
@@ -584,7 +584,7 @@ export default function NeurexPlatformSection() {
                             </svg>
                           </div>
                           <div className="flex flex-col">
-                            <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-none">
+                            <h3 className="text-2xl sm:text-[26px] font-bold text-white tracking-tight leading-none">
                               The Operating Collective
                             </h3>
                             <p className="text-xs sm:text-sm text-white/80 font-medium mt-1">
@@ -732,7 +732,7 @@ export default function NeurexPlatformSection() {
                   <div className="flex flex-col gap-1">
                     <div className="flex flex-col xs:flex-row xs:items-baseline gap-0.5 xs:gap-2">
                       <h3
-                        className={`text-base sm:text-lg lg:text-xl font-medium tracking-tight transition-colors duration-200 ${
+                        className={`text-base sm:text-lg lg:text-[26px] font-medium tracking-tight leading-tight transition-colors duration-200 ${
                           isActive ? "text-[#000416] font-semibold" : "text-[#1d202d] group-hover:text-[#000416]"
                         }`}
                       >

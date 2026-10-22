@@ -26,17 +26,17 @@ export default function NeurexImpactSection() {
 
   return (
     <section className="w-full py-20 sm:py-24 lg:py-28 bg-white relative overflow-hidden text-[#000416]">
-      {/* Container: max-w 1310px as per Neurex container-02 */}
-      <div className="w-full max-w-[1310px] mx-auto px-4 sm:px-8 lg:px-10">
+      {/* Container: max-w 1240px as per page grid standards */}
+      <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
         
         {/* Section Heading */}
-        <div className="text-center max-w-[720px] mx-auto mb-12 sm:mb-14 lg:mb-16">
+        <div className="text-center max-w-[880px] mx-auto mb-12 sm:mb-14 lg:mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 24, filter: "blur(4px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="text-3xl sm:text-4xl lg:text-[56px] font-medium leading-[1.14] lg:leading-[64px] tracking-[-1.2px] lg:tracking-[-1.92px] text-[#000416]"
+            className="text-3xl sm:text-4xl lg:text-[48px] font-medium leading-[1.14] lg:leading-[56px] tracking-[-1.2px] lg:tracking-[-1.5px] text-[#000416]"
           >
             The impact we’ve engineered <br className="hidden sm:block" />
             for businesses
@@ -106,7 +106,7 @@ export default function NeurexImpactSection() {
               </svg>
 
               {/* Quote Headline Text */}
-              <p className="text-xl sm:text-2xl lg:text-[28px] font-medium leading-[1.3] text-[#000416] tracking-[-0.32px]">
+              <p className="text-xl sm:text-2xl lg:text-[26px] font-medium leading-[1.35] text-[#000416] tracking-[-0.32px]">
                 CyberShield&apos;s systems seamlessly bridge distributed backend infrastructure with autonomous AI workflows, built for long-term compound scale.
               </p>
             </div>

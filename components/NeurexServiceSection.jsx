@@ -71,11 +71,11 @@ export default function NeurexServiceSection() {
 
   return (
     <section className="w-full py-20 sm:py-24 lg:py-28 bg-white text-[#000416] relative overflow-hidden border-b border-[#ebebeb]/60">
-      {/* Container 02: max-w 1310px as per Neurex styling */}
-      <div className="w-full max-w-[1310px] mx-auto px-4 sm:px-8 lg:px-10">
+      {/* Container: max-w 1240px aligned with page grid */}
+      <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
         
         {/* Top Header Row: Heading on left, Get Started button on right */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-14 lg:mb-16">
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-12 sm:mb-14 lg:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 24, filter: "blur(4px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -83,7 +83,7 @@ export default function NeurexServiceSection() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-[620px]"
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-[56px] font-medium leading-[1.12] lg:leading-[64px] tracking-[-1.2px] lg:tracking-[-1.92px] text-[#000416]">
+            <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-medium leading-[1.12] lg:leading-[56px] tracking-[-1.2px] lg:tracking-[-1.5px] text-[#000416]">
               Enterprise technology &amp; <br className="hidden sm:block" />
               digital services for scale
             </h2>
@@ -198,7 +198,7 @@ export default function NeurexServiceSection() {
               >
                 {/* Title & Description */}
                 <div className="space-y-3 max-w-[420px]">
-                  <h3 className="text-2xl sm:text-3xl lg:text-[34px] font-medium leading-[1.2] tracking-[-0.32px] text-[#000416]">
+                  <h3 className="text-2xl sm:text-3xl lg:text-[28px] font-medium leading-[1.25] tracking-[-0.32px] text-[#000416]">
                     {currentTab.title}
                   </h3>
                   <p className="text-sm sm:text-base text-[#4a4d5a] leading-relaxed font-normal">

@@ -36,7 +36,7 @@ export default function NeurexThreewaysSection() {
       <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-8 lg:px-10">
         
         {/* Top Header Row: Heading on left, Get Started button on right */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-14 lg:mb-16">
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-12 sm:mb-14 lg:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 24, filter: "blur(4px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -44,7 +44,7 @@ export default function NeurexThreewaysSection() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-[680px]"
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-[56px] font-medium leading-[1.12] lg:leading-[64px] tracking-[-1.2px] lg:tracking-[-1.92px] text-white">
+            <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-medium leading-[1.12] lg:leading-[56px] tracking-[-1.2px] lg:tracking-[-1.5px] text-white">
               Three pillars driving your <br className="hidden sm:block" />
               compound technology advantage
             </h2>
@@ -126,7 +126,7 @@ export default function NeurexThreewaysSection() {
               >
                 {/* Title & Description */}
                 <div className="flex flex-col gap-2.5">
-                  <h3 className="text-xl sm:text-2xl font-medium tracking-[-0.16px] text-white">
+                  <h3 className="text-xl sm:text-[26px] font-medium tracking-[-0.16px] text-white leading-snug">
                     {card.title}
                   </h3>
                   <p className="text-sm sm:text-base text-white/70 font-normal leading-relaxed">

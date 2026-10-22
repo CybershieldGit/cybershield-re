@@ -213,9 +213,10 @@ export default function AboutPage() {
         <div className="container-02">
           <div className="flex flex-col gap-10 sm:gap-14">
             {/* Hero Text Content */}
-            <div className="max-w-[780px] flex flex-col gap-5 sm:gap-6">
+            <div className="max-w-[880px] flex flex-col gap-5 sm:gap-6">
               <h1 className="heading-01 font-medium tracking-tight text-[#000416]">
-                Architecting the systems and digital services that power modern enterprises
+                Architecting the systems and digital services <br className="hidden sm:block" />
+                that power modern enterprises
               </h1>
               <p className="body-regular-01 text-[#4a4d5a] max-w-[620px]">
                 Founded in 2016, CyberShield Technologies is a tech and digital services company delivering end-to-end solutions in AI, Cloud, Backend, Web &amp; Apps, Digital Marketing, and SaaS, backed by 6 sister brands.

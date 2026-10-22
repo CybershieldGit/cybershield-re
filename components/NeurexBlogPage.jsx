@@ -164,9 +164,10 @@ export default function NeurexBlogPage() {
           <div className="blog-01-hero flex flex-col items-center">
             
             {/* Header Wrap */}
-            <div className="header-wrap max-w-[637px] mx-auto text-center">
-              <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-medium leading-[1.125] lg:leading-[72px] tracking-[-1.5px] lg:tracking-[-1.92px] text-[#000416]">
-                Stay informed with our latest articles
+            <div className="header-wrap max-w-[780px] mx-auto text-center">
+              <h1 className="text-4xl sm:text-5xl lg:text-[54px] xl:text-[60px] font-medium leading-[1.125] lg:leading-[68px] tracking-[-1.5px] lg:tracking-[-1.92px] text-[#000416]">
+                Stay informed with <br className="hidden sm:block" />
+                our latest articles
               </h1>
             </div>
 
@@ -275,7 +276,7 @@ export default function NeurexBlogPage() {
           <div className="blogs-01 flex flex-col gap-10 sm:gap-12 lg:gap-[52px]">
             
             {/* Heading 02 */}
-            <h2 className="heading-02 text-3xl sm:text-4xl lg:text-[56px] font-medium leading-[1.15] lg:leading-[64px] tracking-[-1.2px] lg:tracking-[-1.5px] text-[#000416]">
+            <h2 className="heading-02 text-3xl sm:text-4xl lg:text-[48px] font-medium leading-[1.15] lg:leading-[56px] tracking-[-1.2px] lg:tracking-[-1.5px] text-[#000416]">
               More blogs &amp; articles
             </h2>
 

@@ -57,7 +57,7 @@ export default function NeurexInsightsSection() {
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="text-3xl sm:text-4xl lg:text-[56px] font-medium leading-[1.14] lg:leading-[64px] tracking-[-1.2px] lg:tracking-[-1.92px] text-[#000416]"
+            className="text-3xl sm:text-4xl lg:text-[48px] font-medium leading-[1.14] lg:leading-[56px] tracking-[-1.2px] lg:tracking-[-1.5px] text-[#000416]"
           >
             Insights from business <br className="hidden sm:block" />
             industry leaders
